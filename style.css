@@ -11,6 +11,7 @@
       width : 900px;
       padding: 35px;
       margin: auto;
+      text-align : center;
 }
 
 .page {
@@ -27,7 +28,7 @@
 }
 
 .title {
-  fontsize : 900;     
+  fontsize : 900;
 }
 
 body {
