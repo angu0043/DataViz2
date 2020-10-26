@@ -9,7 +9,7 @@
 
 .page-header-content{
       width : 900px;
-      padding: 35px;
+      padding: 0px 35px;
       margin: auto;
       text-align : center;
 }
@@ -19,11 +19,13 @@
       background-color : white;
       padding: 35px;
       margin: auto;
+      margin-top : -65px;
 }
 
 .page-img img{
   width : 100px;
   height : 100px;
+  padding : 0px 62px;
       
 }
 
