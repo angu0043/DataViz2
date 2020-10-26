@@ -21,13 +21,17 @@
       margin: auto;
 }
 
+.page-title{
+  padding-top : 25px;
+}
+
 .page-title img{
   width : 100px;
   height : 100px;
       
 }
 
-.title {
+.title h1 {
   fontweight : 900;
   fontsize: 4em;
   text-align: left;
