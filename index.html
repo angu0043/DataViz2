@@ -9,53 +9,48 @@
   
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="style.css" media="all">
-  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
   
 </head>
 <body>
 
 <header>
-  <div class = "container">
-    <div class = "row">
-      <div class = "page-img col-md-4">
+      <div class = "page-img">
         <img src = "happy.png" class="img-responsive" >
       </div>
-      <div class="page-title col-md-8">
+      <div class="page-title">
         World of Happiness 
       </div>
-    </div>
-  </div>
 </header>
 <section>
-  <div class = "container" >
-  <div class = "row" >
-    <div class = "description col-md-12">
+
+   <div class = "description">
       This visualization will give viewers an overview of the interesting, livable and happiness of all countries around the world. The datasets and ranking we have
       is between the period 2015 - 2019. The score of happiness in each country will be calculated by combine the score of 6 different aspects : GDP score, Social 
       support, Healthy life expectency, Freedom to make life choices, Perceptions of corruption and Generosity of people. Hope that my visualization will help viewers
       answer questions they expect, like 'How is the country he is living in on the ranking of the most livable countries in the world?'
-    </div>
-  </div>                                                                                                                                    
+   </div>
+                                                                                                                                 
   <article>
-    <div class = "vis1-title row">
+    <div class = "vis1-title">
       Distribution of Happiness score 
     </div>
-    <div class = "vis1-des row">
+    <div class = "vis1-des">
     </div>
     <div id = "vis1">
     </div>
   </article>
-  <article class = "row">
-     <div class = "vis2-title col-md-12">
+  <article>
+     <div class = "vis2-title">
        Relationship between others attributes score with the happiness
      </div>
-     <div class = "vis2 col-md-8" id = "vis2">
+     <div class = "vis2" id = "vis2">
      
      </div>
-     <div class = "vis3 col-md-4" id = "vis3">
+     <div class = "vis3" id = "vis3">
      </div>
-  </article>
-  </div>                                 
+  </article>                                
 </section>
 
 <script type="text/javascript">
