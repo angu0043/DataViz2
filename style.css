@@ -14,3 +14,7 @@ header{
 body {
   background-color : orange; 
 }
+
+body section{
+  background-color : white;     
+}
