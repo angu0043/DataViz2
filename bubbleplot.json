@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 450,
-  "height": 600,
+  "height": 450,
   "title": "Relationship between Score of happiness with different types of score",
   "data": {
     "url": "https://raw.githubusercontent.com/angu0043/DataViz2/main/FullData.csv"
