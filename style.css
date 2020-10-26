@@ -2,20 +2,23 @@
       font-family: 'Source Sans Pro', sans-serif;
 }
 
+.page-header{
+      width : 900px;
+      background-color: #424242;
+      padding: 50px;
+      margin: auto;
+}
+
 .page {
       width : 900px;
       background-color : white;
-      padding: 50px;
+      padding: 35px;
       margin: auto;
 }
 
 .page-img {
   width : 30px;
   height : 30px;
-}
-
-.header{
-  background-color : #424242; 
 }
 
 body {
