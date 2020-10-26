@@ -21,6 +21,15 @@
     World of Happiness 
   </div>
 </header>
+<section>
+  <article>
+    <div class = "vis1-title">
+      Distribution of Happiness score 
+    </div>
+    <div id = "vis1">
+    </div>
+  </article>
+</section>
 
 <script type="text/javascript">
   
@@ -33,12 +42,12 @@
   vegaEmbed('#vis2', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>
-
+  
   var spec3 = "top10chart.json";
   vegaEmbed('#vis3', spec3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+</script>
 
 </body>
 </html>
