@@ -34,6 +34,10 @@
   font-size: 4em;
 }
 
+.intro{
+  margin-bottom: 20px;
+}
+
 .vis-container{
       width: 100%;
 }
