@@ -3,9 +3,12 @@
 }
 
 .page-header{
-      width : 900px;
       background-color: #424242;
       height : 100px;
+}
+
+.page-header-content{
+      width : 900px;
       padding: 35px;
       margin: auto;
 }
