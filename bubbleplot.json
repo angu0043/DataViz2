@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "Relationship between Score of happiness with different types of score",
+  "data": {
+    "url": "https://raw.githubusercontent.com/angu0043/DataViz2/main/FullData.csv"
+  },
+  "params": [
+    {
+      "name": "Score_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "GDP per capita",
+          "Social support",
+          "Healthy life expectancy",
+          "Freedom to make life choices",
+          "Generosity",
+          "Perceptions of corruption"
+        ],
+        "labels": [
+          "Null",
+          "GDP per capita",
+          "Social Support",
+          "Healthy life expectancy",
+          "Freedom to make life choices",
+          "Generosity",
+          "Perceptions of corruption"
+        ],
+        "name": "Score Selection: "
+      }
+    },
+    {
+      "name": "Year_selection",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2019,
+        "step": 1,
+        "name": "Year : "
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "datum[Score_selection]", "as": "Chosen score"},
+    {"filter": "datum.Year == Year_selection"}
+  ],
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Score",
+      "type": "quantitative",
+      "title": "Score of happiness"
+    },
+    "y": {
+      "field": "Chosen score",
+      "type": "quantitative",
+      "title": "Chosen score"
+    },
+    "color": {"field": "Continent", "type": "nominal"}
+  },
+  "config": {}
+}
