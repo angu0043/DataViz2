@@ -2,6 +2,13 @@
       font-family: 'Source Sans Pro', sans-serif;
 }
 
+.page {
+      width : 900px;
+      background-color : white;
+      padding: 50px;
+      margin: auto;
+}
+
 .page-img {
   width : 30px;
   height : 30px;
