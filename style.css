@@ -15,7 +15,7 @@
 }
 
 .page {
-      width : 1050px;
+      width : 900px;
       background-color : white;
       padding: 35px;
       margin: auto;
@@ -28,7 +28,13 @@
 }
 
 .title {
-  fontsize : 900;
+  fontweight : 900;
+  text-align: left;
+  
+}
+
+.vis-container{
+      width: 100%;
 }
 
 body {
