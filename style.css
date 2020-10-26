@@ -32,8 +32,8 @@
 }
 
 .title h1 {
-  fontweight : 900;
-  fontsize: 4em !important;
+  font-weight : 900;
+  font-size: 4em !important;
   text-align: left;
   
 }
