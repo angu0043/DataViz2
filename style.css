@@ -3,7 +3,7 @@
 }
 
 .page-header{
-      background-color: #424242;
+      background-color: #fd8d3c;
       height : 200px;
 }
 
@@ -32,7 +32,6 @@
 .title h1 {
   font-weight : 900;
   font-size: 4em;
-  color: palegoldenrod;
 }
 
 .intro{
