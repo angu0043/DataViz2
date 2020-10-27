@@ -52,9 +52,9 @@
     {
       "mark": {
         "type": "text",
-        "fontSize": 80,
-        "x": 320,
-        "y": 280,
+        "fontSize": 60,
+        "x": 230,
+        "y": 230,
         "opacity": 0.002
       },
       "encoding": {"text": {"field": "Chosen Year"}}
