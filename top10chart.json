@@ -1,15 +1,17 @@
-{
+
+ {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 240,
+  "width": 300,
   "height": 300,
-  "title": "Top 10 countries by score selected",
-  "data": {
+  "title" : "Top 10 countries by score selected",
+  "data":
+  {
     "url": "https://raw.githubusercontent.com/angu0043/DataViz2/main/FullData.csv"
   },
   "params": [
     {
       "name": "Score_selection",
-      "value": "Score",
+      "value" : "Score",
       "bind": {
         "input": "select",
         "options": [
@@ -45,28 +47,46 @@
       }
     }
   ],
-  "mark": "bar",
+  "mark":"bar",
   "transform": [
+
     {"calculate": "datum[Score_selection]", "as": "Chosen score"},
     {"filter": "datum.Year == Year_selection"},
     {
-      "window": [{"op": "row_number", "as": "Score Rank"}],
-      "sort": [{"field": "Chosen score", "order": "descending"}]
+      "window" : [
+        {
+          "op" : "row_number",
+          "as" : "Score Rank"
+        }
+      ],
+      "sort": [
+        {
+          "field" : "Chosen score",
+          "order" : "descending"
+        }
+      ]
     },
     {
       "calculate": "datum['Score Rank'] < 10 ? datum['Country or region'] : 'All Others'",
-      "as": "ranked_country"
+      "as" : "ranked_country"
     }
   ],
   "encoding": {
-    "x": {"field": "Chosen score", "type": "quantitative", "title": null},
-    "y": {
-      "sort": {"op": "mean", "field": "Chosen score", "order": "descending"},
-      "field": "ranked_country",
-      "type": "ordinal",
+    "x":
+    {
+      "field": "Chosen score",
+      "type" : "quantitative",
       "title": null
     },
-    "color": {"value": "purple"}
-  },
-  "config": {}
+    "y":
+    {
+       "sort": {"op": "mean", "field": "Chosen score", "order": "descending"},
+      "field" : "ranked_country",
+      "type" : "ordinal",
+      "title": null
+    },
+    "color": {
+      "value" : "#c39b77"
+    }
+  }
 }
