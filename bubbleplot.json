@@ -53,9 +53,7 @@
       "field": "Score",
       "type": "quantitative",
       "title": "Score of happiness",
-      "scale":{
-        "domain" : [2, 8]
-      },
+      "scale": {"domain" : [2,8]},
       "axis" : {
         "tickCount" : 8
       }
@@ -77,8 +75,7 @@
           "field": "Score",
           "type": "quantitative",
           "title": "Score of happiness",
-          "axis": {"tickCount": 8},
-          "scale": {"domain": [2, 8]}
+          "axis": {"tickCount": 8}
         },
         "y": {
           "field": "Chosen score",
@@ -86,7 +83,14 @@
           "title": "Chosen score",
           "axis": {"tickCount": 8}
         },
-        "color": {"field": "Continent", "type": "nominal"},
+        "color": 
+        {
+          "field": "Continent", 
+          "type": "nominal",
+          "scale": {
+            "scheme" : "accent"
+          }
+        },
         "tooltip": [
           {"field": "Country or region", "title": "Country", "type": "nominal"},
           {
