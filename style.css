@@ -5,6 +5,7 @@
 .page-header{
       background-color: #fd8d3c;
       height : 200px;
+      background-image: people.png;
 }
 
 .page-header-content{
