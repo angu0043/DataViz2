@@ -50,7 +50,6 @@
   ],
   "layer": [
     {
-      "width": 600,
       "mark": {
         "type": "text",
         "fontSize": 80,
