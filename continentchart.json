@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/angu0043/DataViz2/main/FullData.csv"
   },
+  "width" : 500
   "height": 300,
   "params": [
     {
